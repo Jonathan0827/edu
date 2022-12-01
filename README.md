@@ -1,2 +1,2 @@
-# edu
-Jonathan’s assignment download site
+# EDU
+## Jonathan’s assignment download site
