@@ -1,10 +1,31 @@
-
 .fade-in {
 	display: inline-block;
 	animation: fadein 1s;
 	-moz-animation: fadein 1s; /* Firefox */
 	-webkit-animation: fadein 1s; /* Safari and Chrome */
 	-o-animation: fadein 1s; /* Opera */
+}
+div {
+	cursor: pointer;
+}
+div:hover .highlight:after {
+	width: 100%;
+}
+.highlight {
+	display: inline-block;
+	position: relative;
+}
+.highlight:after {
+	content: "";
+	width: 0;
+	height: 10px;
+	display: inline-block;
+	background: #d9fcdb;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.2s all;
 }
 html {
 	scroll-behavior: smooth;
@@ -80,8 +101,6 @@ progress {
 	--width-card-wide: 800px;
 	--width-content: 1080px;
 }
-
-
 
 /* Layout */
 article aside {
@@ -181,10 +200,9 @@ nav {
 	align-items: center;
 	font-weight: bold;
 	justify-content: space-between;
-	
-  top: 1%;
-  background: #ffffff;
-  
+
+	top: 1%;
+	background: #ffffff;
 }
 
 nav ul {
@@ -220,8 +238,7 @@ nav ul li ul {
 	z-index: 1;
 }
 nav img {
-  top: 1%;
-  
+	top: 1%;
 }
 nav ul li ul::before {
 	/* fill gap above to make mousing over them easier */
